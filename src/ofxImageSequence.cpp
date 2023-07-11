@@ -227,8 +227,8 @@ bool ofxImageSequence::preloadAllFilenames()
 	}
 
     // read the directory for the images
-	#ifdef TARGET_LINUX
-	dir.sort();
+    #if defined TARGET_LINUX || defined TARGET_OSX
+    dir.sort();
 	#endif
 
 
